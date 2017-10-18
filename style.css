@@ -1,0 +1,27 @@
+/* CSS para el MARS ROVER */
+
+/* Estilo que vamos a aplicar a las seeciones que tengan esta clase="container" */
+.container-centered {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#buttonRight {
+  margin-right: 50px;
+}
+
+table{
+  font-size: 1.5em;
+  margin: 25px auto 0;
+
+}
+td{
+  border: 5px solid white;
+
+  margin: 10px;
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}

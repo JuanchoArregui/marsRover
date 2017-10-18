@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Juancho Mars Rover</title>
+  <script src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <!-- INTRO HEADER -->
+  <header>
+    <div class="container-centered" id="header-container">
+
+          <h1 id="tittle">The Mars Rover Project
+          </h1>
+   </div>
+ </header>
+
+  <!-- SECTION MARS ROVER CONTROLS -->
+  <section id"controls">
+    <div class="container-centered">
+
+      <p>Instrucciones: Haz click en los siguientes botones para manejar el Rover. El Rover sólo puede girar o moverse dentro de la matriz mostrada de 10x10. Si intentas moverte fuera de los límites emitirá un pitido de advertencia. El rover irá dejando un rastro de color a su paso en función del número de veces que haya pasado por una casilla a modo de mapa de calor.</p>
+       <h3>Botones de Control</h3>
+
+      <button id="buttonLeft" onclick="turnLeft()">◄</button>
+      <button id="buttonRight" onclick="turnRight()">►</button>
+      <button id="buttonForward" onclick="goForward()">▲</button>
+      <button id="buttonBackward" onclick="goBackward()">▼</button>
+    </div>
+
+    <audio id="play" src="http://www.soundjay.com/button/beep-07.wav"></audio>
+
+  </section>
+
+  <!-- SECTION Moon Grid -->
+  <section id="moonGrid">
+
+    <div class="container-centered">
+
+ <table cellpadding="0"
+  cellspacing="0">
+  <tr>
+    <td id="00"></th>
+    <td id="01"></th>
+    <td id="02"></th>
+    <td id="03"></th>
+    <td id="04"></th>
+    <td id="05"></th>
+    <td id="06"></th>
+    <td id="07"></th>
+    <td id="08"></th>
+    <td id="09"></th>
+  </tr>
+  <tr>
+    <td id="10"></th>
+    <td id="11"></th>
+    <td id="12"></th>
+    <td id="13"></th>
+    <td id="14"></th>
+    <td id="15"></th>
+    <td id="16"></th>
+    <td id="17"></th>
+    <td id="18"></th>
+    <td id="19"></th>
+  </tr>
+  <tr>
+    <td id="20"></th>
+    <td id="21"></th>
+    <td id="22"></th>
+    <td id="23"></th>
+    <td id="24"></th>
+    <td id="25"></th>
+    <td id="26"></th>
+    <td id="27"></th>
+    <td id="28"></th>
+    <td id="29"></th>
+  </tr>
+  <tr>
+    <td id="30"></th>
+    <td id="31"></th>
+    <td id="32"></th>
+    <td id="33"></th>
+    <td id="34"></th>
+    <td id="35"></th>
+    <td id="36"></th>
+    <td id="37"></th>
+    <td id="38"></th>
+    <td id="39"></th>
+  </tr>
+ <tr>
+    <td id="40"></th>
+    <td id="41"></th>
+    <td id="42"></th>
+    <td id="43"></th>
+    <td id="44"></th>
+    <td id="45"></th>
+    <td id="46"></th>
+    <td id="47"></th>
+    <td id="48"></th>
+    <td id="49"></th>
+  </tr>
+ <tr>
+    <td id="50"></th>
+    <td id="51"></th>
+    <td id="52"></th>
+    <td id="53"></th>
+    <td id="54"></th>
+    <td id="55"></th>
+    <td id="56"></th>
+    <td id="57"></th>
+    <td id="58"></th>
+    <td id="59"></th>
+  </tr>
+ <tr>
+    <td id="60"></th>
+    <td id="61"></th>
+    <td id="62"></th>
+    <td id="63"></th>
+    <td id="64"></th>
+    <td id="65"></th>
+    <td id="66"></th>
+    <td id="67"></th>
+    <td id="68"></th>
+    <td id="69"></th>
+  </tr>
+ <tr>
+    <td id="70"></th>
+    <td id="71"></th>
+    <td id="72"></th>
+    <td id="73"></th>
+    <td id="74"></th>
+    <td id="75"></th>
+    <td id="76"></th>
+    <td id="77"></th>
+    <td id="78"></th>
+    <td id="79"></th>
+  </tr>
+ <tr>
+    <td id="80"></th>
+    <td id="81"></th>
+    <td id="82"></th>
+    <td id="83"></th>
+    <td id="84"></th>
+    <td id="85"></th>
+    <td id="86"></th>
+    <td id="87"></th>
+    <td id="88"></th>
+    <td id="89"></th>
+  </tr>
+ <tr>
+    <td id="90"></th>
+    <td id="91"></th>
+    <td id="92"></th>
+    <td id="93"></th>
+    <td id="94"></th>
+    <td id="95"></th>
+    <td id="96"></th>
+    <td id="97"></th>
+    <td id="98"></th>
+    <td id="99"></th>
+  </tr>
+</table>
+ <p>Información de control:</p>
+ <p id="test">test</p>
+
+ </div>
+
+  </section>
+
+
+</body>
+</html>
